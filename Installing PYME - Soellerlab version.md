@@ -3,9 +3,13 @@
 ## Installation customised for Soellerlab at the University of Exeter
 
 
-This is a custom install that should ultimately work on most windows 10 machines. The install has the goal to make the latest code available relatively easily. It also reflects the relatively recent move of most code to github.
+This is a custom install that should ultimately work on most windows 10 machines. The install has the goal to make access to the latest code available relatively easily. It also reflects the relatively recent move of most code to github.
 
-**NOTE**: This guide focus on a python 2.7 based install. This is becoming more tricky as conda support for py27 is becoming more flaky due to py27 support phasing out. An updated guide will focus on a python 3 based install. PYME has a tentive date of Jan 2121 to phase out python 2.7 based support.
+### Note for caution - this page is focused on py27
+
+**NOTE**: This guide focuses on a python 2.7 based install. This is becoming more tricky as conda support for py27 is becoming more flaky due to py27 support phasing out. An updated guide will focus on a python 3 based install. PYME has a tentive date of Jan 2121 to phase out python 2.7 based support.
+
+A separate Python 3.X based install will be developed on a separate page.
 
 ### Installation overview
 
