@@ -8,6 +8,10 @@ This is a custom install that should ultimately work on most macOS machines. The
 
 **NOTE**: This guide focuses on a python 3.X based install. PYME has a tentive date of Jan 2121 to phase out python 2.7 based support.
 
+### This is a conda based installation
+
+We are using conda to simplify the install. For reference, we link to the [conda cheat sheet](https://docs.conda.io/projects/conda/en/latest/user-guide/cheatsheet.html) here.
+
 ### Installation overview
 
 The complete install can be broken down into a few higher level steps as follows:
@@ -38,18 +42,18 @@ Just start the terminal app.
 
 STEP 3: Create the PYME default environment
 
-In the anaconda prompt window type the next 3 commands, one after another:
+In the terminal window type the next 3 commands, one after another:
 
 ```python
 conda config --append channels anaconda
 conda config --add channels david_baddeley
-conda create --name pyme-py3 python=3.6 pyme-depends
+conda create --name pyme-py3 python=3.7 pyme-depends
 ```
-**Note**: Need to check if 3.6 is still the recommended version.
+**Note**: We use python 3.7 following a check with the PYME core developers as currently recommended version. This will be subject to ongoing review 
 
 STEP 4: Activate the PYME default environment
 
-Now activate the new conda environment in your anaconda prompt window by typing:
+Now activate the new conda environment in your terminal window by typing:
 
     conda activate pyme-py3
 
@@ -59,9 +63,11 @@ This should change your command prompt to show that you are now within the pyme-
 
 STEP 5: Small fixes to correct conda issues
 
-PART 5A: Attempt to install scikit-dev
+PART 5A: Attempt to install scikit-image
 
-Next, try installing the scikit-image package. Ok if this succeeds, not fatal if not. Again, type in the anaconda prompt window:
+**Update**: scikit-image seems to install ok with conda and Python 3.7. So should *not* currently be needed.
+
+Next, try installing the scikit-image package. Ok if this succeeds, not fatal if not. Again, type in the terminal window:
 
     conda install scikit-image
 
