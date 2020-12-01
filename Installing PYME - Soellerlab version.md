@@ -128,12 +128,25 @@ illustrated in detail above. Finally, press the button to clone the repo.
 
 #### 4. Install a c/c++ compiler
 
-**NOTE**: With the below suggested MS Visual C for Python 2.7 a problem will be encountered about a missing file `stdint.h`. This can be fixed by following the suggestion in the stackoverflow tip here: [https://stackoverflow.com/questions/44865576/python-scikit-image-install-failing-using-pip](). The proper solution, however, may be to install a more recent compiler. Some details can be found on this page about [windows compiler choices for python](https://wiki.python.org/moin/WindowsCompilers). This appears to suggest [Microsoft Build Tools for Visual Studio 2019](https://www.visualstudio.com/downloads/#build-tools-for-visual-studio-2019) as a more recnt and functional choice. I'll report back once tried.
+##### For current builds use Microsoft Build Tools for Visual Studio 2019
 
-**Older info below here**
+For current builds of PYME a more recent compiler than the originally recommended *MS Visual C for Python 2.7* should be installed. Some details on compiler choice can be found on this page about [windows compiler choices for python](https://wiki.python.org/moin/WindowsCompilers). This suggests [Microsoft Build Tools for Visual Studio 2019](https://www.visualstudio.com/downloads/#build-tools-for-visual-studio-2019) as a more recent and functional choice. Apparently, recent anaconda/minconda will suggest this one during the installation and lead the user through the compiler installation process but I have not tried this yet.
+
+I have tested installing this compiler manually on a win10 system that has an existing anconda install and also already had *MS Visual C for Python 2.7* on it.
+
+I downloaded the installer from the [Microsoft Build Tools for Visual Studio 2019](https://www.visualstudio.com/downloads/#build-tools-for-visual-studio-2019) link and then ran it.
+
+This brought up a window to select the components to install. I only ticked the C++ build tools option, as shown below. I then pressed the `Install` button which took a little while to complete (~6GB of stuff I think) and then asked me to reboot. Since then I have been able to successfully build a py3 based PYME from the latest github sources with this compiler. So should be good!
+
+![Microsoft Build Tools for Visual Studio 2019](images/VSC build tools 2019.png)
+
+##### Older MS Visual C for Python 2.7 instructions
+
+**Note**: For historic reference only, use the above recommended newer compiler for all current installs.
 
 Building PYME requires a C compiler. On windows download and install [MS Visual C for Python 2.7](https://www.microsoft.com/en-us/download/details.aspx?id=44266).
 
+**Note**: With the above suggested MS Visual C for Python 2.7 a problem will be encountered about a missing file `stdint.h`. This can be fixed by following the suggestion in the stackoverflow tip here: [https://stackoverflow.com/questions/44865576/python-scikit-image-install-failing-using-pip](). The proper solution is the newer compiler as described above.
 
 #### 5. Build the main code packages using their respective setup procedures.
 
