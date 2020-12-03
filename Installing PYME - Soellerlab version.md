@@ -138,7 +138,7 @@ I downloaded the installer from the [Microsoft Build Tools for Visual Studio 201
 
 This brought up a window to select the components to install. I only ticked the C++ build tools option, as shown below. I then pressed the `Install` button which took a little while to complete (~6GB of stuff I think) and then asked me to reboot. Since then I have been able to successfully build a py3 based PYME from the latest github sources with this compiler. So should be good!
 
-![Microsoft Build Tools for Visual Studio 2019](images/VSC build tools 2019.png)
+![Microsoft Build Tools for Visual Studio 2019](images/VSC-build-tools-2019.png)
 
 ##### Older MS Visual C for Python 2.7 instructions
 
