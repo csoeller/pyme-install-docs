@@ -33,6 +33,12 @@ The complete install can be broken down into a few higher level steps as follows
 
 Just follow the [STEP 1 paragraph](http://python-microscopy.org/doc/Installation/InstallationWithAnaconda.html#step-1-installing-miniconda) at David's site.
 
+**Note**: When installing miniconda you generally have a choice between different installers for python 2 and python 3. From the [miniconda docs](https://docs.conda.io/en/latest/miniconda.html): 
+
+*There are two variants of the installer: Miniconda is Python 2 based and Miniconda3 is Python 3 based. Note that the choice of which Miniconda is installed only affects the root environment. Regardless of which version of Miniconda you install, you can still install both Python 2.x and Python 3.x environments.*
+
+Bottom line: it really doesn't matter as we will build a separate environment for PYME. But if you are pondering we advise a miniconda3 install as Python 3.X is the now fully supported version and you may want to use your `base` environment to play with Python commands using a 3.x version to practice Python 3 syntax and conventions.
+
 #####  Step 2: Open an anaconda prompt
 
 Your start menu should contain an anaconda prompt command something like the one below:
