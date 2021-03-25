@@ -26,3 +26,11 @@ This should link to a future quick overview of how this can be done.
 
 - template repository that shows how to make plugin repositories: [pyme-plugin](https://github.com/python-microscopy/pyme-plugin)
 - more stuff?
+
+### PYME launchers for windows
+
+We like the concept of launchers for windows PYME installs. This allows you to have various Python (or more specifically [conda](https://docs.conda.io/en/latest/)) [virtualenvs](https://towardsdatascience.com/getting-started-with-python-environments-using-conda-32e9f2779307) and fire up PYME apps in these environments seamlessly.
+
+The general concept is described in the [PYME windows launchers](https://github.com/csoeller/pyme-install-docs/blob/master/PYME%20windows%20launchers.md) document.
+
+Some examples can be found in the [launchers subfolder](https://github.com/csoeller/PYME-exeter-siteconfig/tree/master/launchers) of our [site-config repository](https://github.com/csoeller/PYME-exeter-siteconfig).
