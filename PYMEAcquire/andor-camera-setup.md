@@ -26,3 +26,7 @@ Latest PYME has the ability to add camera noise properties to the camera folder 
 	pydoc PYME.Acquire.Hardware.camera_noise
 
 There are examples of `.yaml` files for typical cameras that we use.
+
+## Tests
+
+**TODO**: add some tests to verify correct install

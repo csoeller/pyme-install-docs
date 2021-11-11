@@ -34,3 +34,7 @@ and also activate this environment using the usual
 ## Launchers
 
 **TODO**: add launcher info
+
+## Tests
+
+**TODO**: add some tests to verify correct install
