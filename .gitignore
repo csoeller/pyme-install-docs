@@ -133,3 +133,5 @@ dmypy.json
 wikidocs.dokuwiki
 
 *.dokuwiki
+
+sandbox/
