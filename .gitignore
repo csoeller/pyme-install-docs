@@ -135,3 +135,5 @@ wikidocs.dokuwiki
 *.dokuwiki
 
 sandbox/
+
+*.backup

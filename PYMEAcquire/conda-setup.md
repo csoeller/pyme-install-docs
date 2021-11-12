@@ -29,7 +29,28 @@ and also activate this environment using the usual
 
 ## Directory permissions
 
-**TODO**: add relevant findings
+We needed to set permissions for the files in the environment. Eventually, I tried to set `Full Control` for the `envs` directory and also tick the box `Replace all child object permissions...`. This was eventually done for both the `Users` and `Authenticated Users` groups.
+
+This seems to have done the job but a number of questions remain:
+
+- is setting this for both groups necessary?
+- do we need this done via the `Advanced Settings` tab and tick the `Replace all child...` box?
+
+We need to check on a new computer if all of these settings are necessary or if a subset is sufficient.
+
+### Tests
+
+To test permissions, login as a standard user, activate the environment in question (for us typically `pyme-shared`) and try to execute `python.exe` from an Anaconda shell, e.g.
+
+	python -V
+
+If this prints the Python version all is fine. If you get `permission denied` further permission fiddling is required.
+
+Below we show the settings of the `envs` folder and the permissions on `python.exe`
+
+![](images/file-permissions-envs.png)
+
+![](images/file-permissions-python.png)
 
 ## Launchers
 
