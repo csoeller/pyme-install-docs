@@ -54,7 +54,29 @@ Below we show the settings of the `envs` folder and the permissions on `python.e
 
 ## Launchers
 
-**TODO**: add launcher info
+Launchers are created to simplify app opening and are supposed to take care of environment variables, conda virtualenv (virtual environment) activation and any other setup aspects that are best hidden from the average user. See also the [launcher doc](https://github.com/csoeller/pyme-install-docs/blob/master/PYME%20windows%20launchers.md).
+
+### Put launchers on everybody's desktop
+
+The launchers are typically in a site specific directory. Create shortcuts for all relevant launchers in that directory (typically as admin) and then move these shortcuts into the public desktop. The following instructions detail how to go about that (source [superuser.com](https://superuser.com/questions/984866/how-to-make-a-desktop-shortcut-available-for-all-users-in-windows-10)):
+
+Put it in this folder (exactly like below, with the % characters):
+
+	%public%\Desktop
+
+e.g. using this command:
+
+	copy file.lnk %public%\Desktop
+
+This should be more reliable in case Users location is changed.
+
+Bonus: other ways to open the public desktop in Explorer:
+
+- you can paste `%public%\Desktop` in the Explorer location bar
+- or hit `Win+R` and enter `%public%\Desktop`
+
+
+**TODO**: add further launcher info
 
 ## Tests
 
