@@ -10,6 +10,12 @@ Installing environments accessible for all users with miniconda (or Anaconda in 
 
 - install by prefix in a generally accessible directory - in these examples we call our environment `pyme-shared`
 
+**TODO**: flesh out...
+
+**Note**: The `pyserial` package needed to be installed separately since it is needed by a number of backends and apparently not automatically provided with the `pyme-depends` metapackage. Done easily via:
+
+	conda install pyserial
+
 ## Make more easily usable for all users
 
 - add the parent directory of those environments to the following environment variable: `CONDA_ENVS_PATH`
