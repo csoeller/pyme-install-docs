@@ -16,7 +16,7 @@ I then looked at `What's new` for the 4.95 version and came across the following
 
 ![IDS version 4.95 What is new](images/IDS-4.95-whats-new.png)
 
-This suggested that the queue handling functions used in our backends at the moment are obsolete. With this hunch I downgraded the software version to 4.93. The IDS download section generally has old versions of the software available at the bottom of the list of available downbloads (~16 packages when I had a look).
+This suggested that the queue handling functions used in our backends at the moment are obsolete. With this hunch I downgraded the software version to 4.93. The IDS download section generally has old versions of the software available at the bottom of the list of available downloads (~16 packages when I had a look).
 
 I first needed to uninstall version 4.95 otherwise I could not execute the 4.93 installer. There was an `uninst.exe` in the IDS directory which I think I executed. But there should also be the ability to use Windows 10 `Apps & features` and select the IDS ueye package for uninstallation.
 
@@ -26,7 +26,7 @@ Here is what I ended up with in terms of software versions installed for 4.93, d
 
 ![IDS software version](images/IDS-software-version.png)
 
-If one checks for updates, as expected the 4.5 version is shown as available update, see below, but I left everything at 4.93.
+If one checks for updates, as expected the 4.95 version is shown as available update, see below, but I left everything at 4.93.
 
 ![IDS available updates](images/IDS-software-available-updates.png)
 
