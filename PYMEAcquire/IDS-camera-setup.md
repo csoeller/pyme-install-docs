@@ -41,6 +41,8 @@ The backends need to find the relevant dlls. This is generally ensured by adding
 This is easily established via the launchers and generally my preferred approach. The launcher for `PYMEAcquire` instances that use the ueye cameras contain a statement like this:
 
      set PATH=c:\ProgramData\Miniconda3\condabin;C:\Program Files\IDS\uEye\develop\bin;%PATH%
+     
+The `pyueye` based interface (see below) has some builtin logic to search for the DLLs in a number of default places, so you seem to able to get away without adding DLL locations to the `PATH`.
 
 ### Direct DLL calling backend vs pyueye backend
 
@@ -62,12 +64,20 @@ This interface is not quite as feature complete yet but I have been adding a few
 
 We have example config files for both the uc480 and the pyueye interface in the [PYME-exeter-siteconfig](https://github.com/csoeller/PYME-exeter-siteconfig) repo, in the `generic` subfolder of the init scripts folder.
 
+Links to a couple of config scripts:
+
+- the [init_ui306x_n.py](https://github.com/csoeller/PYME-exeter-siteconfig/blob/master/init_scripts/generic/init_ui306x_n.py) script uses the uc480 backend; it explictly looks for a ui306x camera and starts that if available, otherwise falls back to the first cam it finds
+- the [init_ueye_py_n.py](https://github.com/csoeller/PYME-exeter-siteconfig/blob/master/init_scripts/generic/init_ueye_py_n.py) scripts uses the `pyueye` based backend; it just starts the first available camera
+
+
 ### Setup relevant launcher
 
-**TODO**... link to launcher in siteconfig repo
+A couple of launchers that use the relevant config files:
+
+- [pymeacquire-ueye.bat](https://github.com/csoeller/PYME-exeter-siteconfig/blob/master/launchers/Bern-PC184/pymeacquire-ueye.bat)
+- [pymeacquire-pyueye.bat](https://github.com/csoeller/PYME-exeter-siteconfig/blob/master/launchers/Bern-PC184/pymeacquire-pyueye.bat)
 
 ## Tests
 
-**TODO**: relevant tests...
-
+As explained above, first talk to an attached camera using the apps that come with the `IDS` software. Once that is successful it is time to try PYME. For that fire up the relevant launchers once you adapted them to your system and see how it goes... 
 
