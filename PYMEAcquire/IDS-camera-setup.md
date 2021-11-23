@@ -44,7 +44,23 @@ This is easily established via the launchers and generally my preferred approach
 
 ### Direct DLL calling backend vs pyueye backend
 
-Current PYME has two alternative backends. The original backend is available via the module...
+Current PYME has two alternative backends, one directly using the IDS DLLs, the other goes through the pretty lightweight `pyueye` interface.
+
+#### uc480 interface
+
+The original backend is available via the module `PYME.Acquire.Hardware.uc480.uCam480.py`. This is possibly more tested but not without its problems. There is some cruft and every new feature needs to consult the IDS created structures in some detail with use of `ctypes` methods to perform the necessary translations.
+
+#### pyueye interface
+
+A more recent alternative interface uses the `pyueye` module from IDS, a fairly lightweight Python wrapper around the DLLs. It is most easily installed with `pip`:
+
+	pip install pyueye
+
+This interface is not quite as feature complete yet but I have been adding a few features so that it should not take too long to match the existing uc480 one. The primary advantage that I can see is that all the myriad of constants and structures are available in conveniently wrapped form via `pyueye` whereas with the direct uc480 code one needs to do all the legwork when new features are added. In addition, IDS appears to update it semi-regularly.
+
+#### Config files
+
+We have example config files for both the uc480 and the pyueye interface in the [PYME-exeter-siteconfig](https://github.com/csoeller/PYME-exeter-siteconfig) repo, in the `generic` subfolder of the init scripts folder.
 
 ### Setup relevant launcher
 
