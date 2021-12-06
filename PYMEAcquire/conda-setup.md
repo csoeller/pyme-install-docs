@@ -6,6 +6,30 @@ Installing environments accessible for all users with miniconda (or Anaconda in 
 
 **TODO**: notes below need fleshing out...
 
+A terse sequence of commands (as preliminary placeholder) that achieves a suitable install:
+
+```
+conda config --append channels anaconda
+conda config --add channels david_baddeley
+conda create -p c:\python-support-files\envs\pyme-shared python=3.7 pyme-depends
+conda activate pyme-shared
+set CONDA_ENVS_PATH=c:\python-support-files\envs
+conda activate pyme-shared
+conda install statsmodels # for PYME-extra
+conda install pyserial # for PYMEAcquire serial devices
+cd \python-support-files
+cd pyme-py37
+python setup.py develop
+dh5view -t -m lite
+cd ..\PYME-extra
+python setup.py develop
+python install_plugins.py dist
+# extract pymenf.zip
+# cd ..\pymenf
+python setup.py develop
+python install_plugins.py dist
+```
+
 ## Create the environment
 
 - install by prefix in a generally accessible directory - in these examples we call our environment `pyme-shared`

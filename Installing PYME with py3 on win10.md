@@ -121,17 +121,9 @@ illustrated in detail above. Finally, press the button to clone the repo.
 
 #### 4. Install a c/c++ compiler
 
-##### For current builds use Microsoft Build Tools for Visual Studio 2019
+For current builds of PYME a suitable compiler must be installed.
 
-For current builds of PYME a suitable compiler must be installed. Some details on compiler choices can be found on this page about [windows compiler choices for python](https://wiki.python.org/moin/WindowsCompilers). This suggests [Microsoft Build Tools for Visual Studio 2019](https://www.visualstudio.com/downloads/#build-tools-for-visual-studio-2019) as a recent and functional choice which we describe in further detail below. Apparently, recent anaconda/minconda installs will suggest this one during the installation and lead the user through the compiler installation process (but I have not tried this yet).
-
-I have so far tested installing this compiler manually on a win10 system that has an existing anconda install and also already had *MS Visual C for Python 2.7* on it.
-
-I downloaded the installer from the [Microsoft Build Tools for Visual Studio 2019](https://www.visualstudio.com/downloads/#build-tools-for-visual-studio-2019) link and then ran it.
-
-This brought up a window to select the components to install. I only ticked the C++ build tools option, as shown below. I then pressed the `Install` button which took a little while to complete (6GB of stuff I think) and then asked me to reboot. Since then I have been able to successfully build a py3 based PYME from the latest github sources with this compiler. So should be good!
-
-![Microsoft Build Tools for Visual Studio 2019](images/VSC-build-tools-2019.png)
+Details on the process you find on the [Windows compiler page](Installing a compiler on windows.md).
 
 #### 5. Build the main code packages using their respective setup procedures.
 
