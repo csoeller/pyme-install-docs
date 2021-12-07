@@ -22,7 +22,7 @@ This is still in some early alpha phase and contains various place holders etc. 
 
 We like the concept of launchers for windows PYME installs. This allows you to have various Python (or more specifically [conda](https://docs.conda.io/en/latest/)) [virtualenvs](https://towardsdatascience.com/getting-started-with-python-environments-using-conda-32e9f2779307) and fire up PYME apps in these environments seamlessly.
 
-The general concept is described in the [PYME windows launchers](https://github.com/csoeller/pyme-install-docs/blob/master/PYME%20windows%20launchers.md) document.
+The general concept is described on the [PYME windows launchers page](PYME-windows-launchers.md).
 
 Some examples can be found in the [launchers subfolder](https://github.com/csoeller/PYME-exeter-siteconfig/tree/master/launchers) of our [site-config repository](https://github.com/csoeller/PYME-exeter-siteconfig).
 

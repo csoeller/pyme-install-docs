@@ -1,11 +1,10 @@
 # Log of py3 related install or runtime issues
 
-# Current issues
+## No Current issues
 
-The only issue below is only relevant for acquisitions and may already be fixed. Issue was noticed in Derc 2020. Current state (March 2121) may not require any fixes.
+## Resolved issues
 
-
-## no module dispatch
+### no module dispatch
 
 I was trying to run acquisition on a win10 PC (phy-lmx2cpu) with a py3 PYME install.
 Got an error that a module named dispatch was missing.
