@@ -123,7 +123,7 @@ illustrated in detail above. Finally, press the button to clone the repo.
 
 For current builds of PYME a suitable compiler must be installed.
 
-Details on the process you find on the [Windows compiler page](Installing a compiler on windows.md).
+Details on the process you find on the [Windows compiler page](Installing-a-compiler-on-windows.md).
 
 #### 5. Build the main code packages using their respective setup procedures.
 
