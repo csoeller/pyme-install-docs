@@ -84,7 +84,7 @@ Below we show the settings of the `envs` folder and the permissions on `python.e
 
 ## Launchers
 
-Launchers are created to simplify app opening and are supposed to take care of environment variables, conda virtualenv (virtual environment) activation and any other setup aspects that are best hidden from the average user. See also the [launcher doc](https://github.com/csoeller/pyme-install-docs/blob/master/PYME%20windows%20launchers.md).
+Launchers are created to simplify app opening and are supposed to take care of environment variables, conda virtualenv (virtual environment) activation and any other setup aspects that are best hidden from the average user. See also the [launcher page](../PYME-windows-launchers.md).
 
 ### Put launchers on everybody's desktop
 
