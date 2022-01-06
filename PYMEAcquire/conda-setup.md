@@ -66,7 +66,10 @@ This seems to have done the job but a number of questions remain:
 - is setting this for both groups necessary?
 - do we need this done via the `Advanced Settings` tab and tick the `Replace all child...` box?
 
-We need to check on a new computer if all of these settings are necessary or if a subset is sufficient.
+### Update
+
+On the Dell we checked this again. Apparently, `Authenticated Users` is the group to use and we also had to do this for both `C:\ProgramData\Miniconda3` and `C:\python-support-files`, giving them full control and enable child object permission inheritance. This seemed important so that a normal user can use `conda` and the environments we created.
+
 
 ### Tests
 
