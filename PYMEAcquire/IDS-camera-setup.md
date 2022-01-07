@@ -74,8 +74,8 @@ Links to a couple of config scripts:
 
 A couple of launchers that use the relevant config files:
 
-- [pymeacquire-ueye.bat](https://github.com/csoeller/PYME-exeter-siteconfig/blob/master/launchers/Bern-PC184/pymeacquire-ueye.bat)
-- [pymeacquire-pyueye.bat](https://github.com/csoeller/PYME-exeter-siteconfig/blob/master/launchers/Bern-PC184/pymeacquire-pyueye.bat)
+- [pymeacquire-ueye.bat](https://github.com/csoeller/PYME-exeter-siteconfig/blob/master/launchers/Bern-PCs/pymeacquire-ueye.bat)
+- [pymeacquire-pyueye.bat](https://github.com/csoeller/PYME-exeter-siteconfig/blob/master/launchers/Bern-PCs/pymeacquire-pyueye.bat)
 
 ## Tests
 
