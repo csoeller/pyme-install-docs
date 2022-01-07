@@ -73,6 +73,10 @@ and also activate this environment using the usual
 
 Detailed instructions for building and installing git tools, C compiler etc see our separate notes on how to [install PYME for Win 10](../Installing-PYME-with-py3-win10.md).
 
+### PYME-cs-siteconfig
+
+In addition we need the repository that has our site configuration details on these acquisition PCs. [PYME-cs-siteconfig](https://github.com/csoeller/PYME-cs-siteconfig) has init files, launchers and custom protocols, amongst other things. Consult the [PYME-cs-siteconfig installer page](PYME-cs-siteconfig.md) for more details.
+
 ## Making the install accessible for standard users
 
 ### Check that users can find the relevant executables
