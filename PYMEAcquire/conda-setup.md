@@ -73,7 +73,13 @@ and also activate this environment using the usual
 
 Detailed instructions for building and installing git tools, C compiler etc see our separate notes on how to [install PYME for Win 10](../Installing-PYME-with-py3-win10.md).
 
-## Directory permissions
+## Making the install accessible for standard users
+
+### Check that users can find the relevant executables
+
+This may require adding to the `PATH` in a `CMD` window and using the windows `where` command to locate executables and see where they are found. Note that we will later typically set the `PATH` variable appropriately in the launcher scripts that standard users will run. See below on launchers.
+
+### Directory permissions
 
 We needed to set permissions for the files in the environment. Eventually, I tried to set `Full Control` for the `envs` directory and also tick the box `Replace all child object permissions...`. This was eventually done for both the `Users` and `Authenticated Users` groups.
 
@@ -82,7 +88,7 @@ This seems to have done the job but a number of questions remain:
 - is setting this for both groups necessary?
 - do we need this done via the `Advanced Settings` tab and tick the `Replace all child...` box?
 
-### Update
+#### Update
 
 On the Dell we checked this again. Apparently, `Authenticated Users` is the group to use and we also had to do this for both `C:\ProgramData\Miniconda3` and `C:\python-support-files`, giving them full control and enable child object permission inheritance. This seemed important so that a normal user can use `conda` and the environments we created.
 
