@@ -107,8 +107,6 @@ Launchers are created to simplify app opening and are supposed to take care of e
 
 ### Put launchers on everybody's desktop
 
-Some details on launchers are in our separate [launcher notes](PYME-windows-launchers.md).
-
 The launchers are typically in a site specific directory. Create shortcuts for all relevant launchers in that directory (typically as admin) and then move these shortcuts into the public desktop. The following instructions detail how to go about that (source [superuser.com](https://superuser.com/questions/984866/how-to-make-a-desktop-shortcut-available-for-all-users-in-windows-10)):
 
 Put it in this folder (exactly like below, with the % characters):
