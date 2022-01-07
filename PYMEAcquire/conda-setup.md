@@ -4,37 +4,49 @@ We prefer to use conda enviroments for acquisition and general PYME app use. Thi
 
 Installing environments accessible for all users with miniconda (or Anaconda in general) needs a little extra work. Windows file permissions will likely get into it as well...
 
-**TODO**: notes below need fleshing out...
+As a quick summary a terse sequence of commands that achieves a suitable install:
 
-A terse sequence of commands (as preliminary placeholder) that achieves a suitable install:
-
-```
+```DOS
 conda config --append channels anaconda
 conda config --add channels david_baddeley
 conda create -p c:\python-support-files\envs\pyme-shared python=3.7 pyme-depends
-conda activate pyme-shared
+
+REM probably best set via System Environment Variables settings
 set CONDA_ENVS_PATH=c:\python-support-files\envs
+REM install a couple of packages manually
 conda activate pyme-shared
 conda install statsmodels # for PYME-extra
 conda install pyserial # for PYMEAcquire serial devices
+
+REM after cloning the relevant repos go into respective directories and build
 cd \python-support-files
 cd pyme-py37
 python setup.py develop
+REM a quick minimal test everything sort of works
 dh5view -t -m lite
+
+REM same for PYME-extra
 cd ..\PYME-extra
 python setup.py develop
 python install_plugins.py dist
-# extract pymenf.zip
-# cd ..\pymenf
+
+REM if you are using PYMEnf install as well
+REM extract pymenf.zip
+cd ..\pymenf
 python setup.py develop
 python install_plugins.py dist
 ```
 
 ## Create the environment
 
-- install by prefix in a generally accessible directory - in these examples we call our environment `pyme-shared`
+Install a fresh environment by prefix into a generally accessible directory - in these examples we call our environment `pyme-shared`
 
-**TODO**: flesh out...
+```DOS
+conda config --append channels anaconda
+conda config --add channels david_baddeley
+conda create -p c:\python-support-files\envs\pyme-shared python=3.7 pyme-depends
+
+```
 
 **Note**: The `pyserial` package needed to be installed separately since it is needed by a number of backends and apparently not automatically provided with the `pyme-depends` metapackage. Done easily via:
 
@@ -42,7 +54,7 @@ python install_plugins.py dist
 
 ## Make more easily usable for all users
 
-- add the parent directory of those environments to the following environment variable: `CONDA_ENVS_PATH`
+Add the parent directory of those environments to the `CONDA_ENVS_PATH` environment variable.
 
 Example:
 
@@ -56,6 +68,10 @@ With that setting (probably best set as system environment variable so that ever
 and also activate this environment using the usual
 
 	conda activate pyme-shared
+
+## Building and installing the various PYME packages
+
+Detailed instructions for building and installing git tools, C compiler etc see our separate notes on how to [install PYME for Win 10](../Installing-PYME-with-py3-win10.md).
 
 ## Directory permissions
 
@@ -91,6 +107,8 @@ Launchers are created to simplify app opening and are supposed to take care of e
 
 ### Put launchers on everybody's desktop
 
+Some details on launchers are in our separate [launcher notes](PYME-windows-launchers.md).
+
 The launchers are typically in a site specific directory. Create shortcuts for all relevant launchers in that directory (typically as admin) and then move these shortcuts into the public desktop. The following instructions detail how to go about that (source [superuser.com](https://superuser.com/questions/984866/how-to-make-a-desktop-shortcut-available-for-all-users-in-windows-10)):
 
 Put it in this folder (exactly like below, with the % characters):
@@ -109,8 +127,9 @@ Bonus: other ways to open the public desktop in Explorer:
 - or hit `Win+R` and enter `%public%\Desktop`
 
 
-**TODO**: add further launcher info
-
 ## Tests
 
-**TODO**: add some tests to verify correct install
+The main tests include
+
+ - test that PYME works in principle (e.g. using `dh5view` test commands, see above); probably also want to open an `.h5r` file - here cloning our [example data repo](https://github.com/csoeller/PYME-extra-sample-data) is a good starting point
+ - verify that standard users can access and run PYME, see above for some tests, e.g. making sure they can execute the Python interpreter 
