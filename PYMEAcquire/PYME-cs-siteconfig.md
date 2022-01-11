@@ -16,6 +16,12 @@ This is done using
 
 We generally pick these up via the [launcher scripts](../PYME-windows-launchers.md) which include a path to the init file location.
 
+## Launcher scripts
+
+The launcher scripts are generally installed by creating shortcuts to the relevant set of files from the repo and moving these shortcuts to the public desktop. See also the launcher related instructions about the [main setup with conda](conda-setup.md).
+
+**TODO**: make a script to autogenerate and move the shortcuts to the public desktop.
+
 ## Dye Ratios
 
 The repo also contains a file with dye ratios for a number of splitter dichroics.

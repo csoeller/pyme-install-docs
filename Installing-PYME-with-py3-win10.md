@@ -189,6 +189,9 @@ Note that we leave out the ```dist``` argument in the plugin install call since 
 
 6. Test: At this stage you should bring up visgui again, say, and check that all the expected extra menus are available. [*Note to self, show what menus should be available*]
 
+##### Optional: build PYMEnf
+
+Local users may want to install and build `PYMEnf` that contains a few select non-free plugins (which we cannot easily make public due to licensing constraints). Details are in the [PYMEnf installation notes](Installing-PYMEnf.md).
 
 #### 6. Make a few shortcut files and launchers
 

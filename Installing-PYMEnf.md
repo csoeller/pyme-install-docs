@@ -2,9 +2,9 @@
 
 ## Unzip the pymenf code
 
-I have resorted to distributing the PYMEnf code via a zip archive (long story why this is not shared via github at the moment). The file ```pymenf.zip``` is available from our ```CS lab``` Teams group chat in the ```Files``` section.
+I have resorted to distributing the PYMEnf code via a zip archive (long story why this is not publicly shared via github at the moment). A zip file of  ```PYMEnf``` named with `pymenf` and a date in the name can be found in the `PYMEnf` subdirectory of our shared OneDrive folder with microscopy related stuff.
 
-Get the archive from there and unpack into the same directory that has already the ```python-microscopy``` and ```PYME-extra``` repos in it. Unpacking it should create a new folder ```pymenf```.
+Get the archive from there and unpack into the same directory that has already the ```python-microscopy``` and ```PYME-extra``` repos in it. Unpacking it should create a new folder ```pymenf-master``` (the `master` bit refers to this stemming from the `master` branch of the repo).
 
 
 ## Build the pymenf code
