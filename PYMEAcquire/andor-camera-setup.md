@@ -23,7 +23,7 @@ A possible preferable way is to use the concept of launcher scripts that set the
 
 ### Example launcher
 
-We have an example launcher script [pymeacquire-zyla-py37.bat](https://github.com/csoeller/PYME-exeter-siteconfig/blob/master/launchers/Bern-PC184/pymeacquire-zyla-py37.bat) in our [site-config repo](https://github.com/csoeller/PYME-exeter-siteconfig).
+We have an example launcher script [pymeacquire-zyla.bat](https://github.com/csoeller/PYME-exeter-siteconfig/blob/master/launchers/Bern-PCs/pymeacquire-zyla.bat) in our [site-config repo](https://github.com/csoeller/PYME-exeter-siteconfig).
 
 ## Add camera configurations if needed
 
