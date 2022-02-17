@@ -6,11 +6,11 @@ The [PYME-cs-siteconfig](https://github.com/csoeller/PYME-cs-siteconfig) reposit
 
 Clone the repo using the usual approaches.
 
-## Install custom protocols
+## Install config files
 
-This is done using
+This is done using (**Note**: script file name has changed recently)
 
-    python install_plugins.py dist
+    python install_config_files.py dist
 
 ## Init files
 
