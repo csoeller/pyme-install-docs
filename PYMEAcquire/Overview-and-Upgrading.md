@@ -2,7 +2,7 @@
 
 ## A brief overview of the setup steps on an acquisition PC
 
-1. Create a conda environment with all the relevant PYME and related packages. Take care to make it accessible for all users (with the understanding of only one user accessing it at a time) by setting env path and permission accordingly. Detais in the [conda setup notes](conda-setup.md).
+1. Create a conda environment with all the relevant PYME and related packages. Take care to make it accessible for all users (with the understanding of only one user accessing it at a time) by setting env path and permission accordingly. Details in the [conda setup notes](conda-setup.md).
 2. Complete the site specific config, installing relevant config files, camera settings etc and set up launchers to launch the relevant apps. Details in the [site config install info](PYME-cs-siteconfig.md).
 3. Set up the relevant hardware drivers, DLLs and associated configuration. Some camera related info is in the [Andor camera setup notes](andor-camera-setup.md) and the [IDS camera setup notes](IDS-camera-setup.md). Other drivers depend on the hardware used on the system.
 
@@ -38,7 +38,7 @@ Admin users can straight search for the "edit system environment variables" or s
 
 ![edit system environment variables](images/edit-env-vars-system-1.png)
 
-Follow the link `Environment Variables...` which brings up the dialog as above but now you can choose to edit both user environment variables and system enviroment variables. Depending on what you are trying to achieve you may opt for system variables (e.g. change the default for all users) or user variables (e.g. testing setting for you as a single user). Note that settings by individual users of the user environment variable can override the system default (I believe). Set the `PYMEENV` variable as explained above.
+Follow the link `Environment Variables...` which brings up the dialog as above but now you can choose to edit both user environment variables and system environment variables. Depending on what you are trying to achieve you may opt for system variables (e.g. change the default for all users) or user variables (e.g. testing setting for you as a single user). Note that settings by individual users of the user environment variable can override the system default (I believe). Set the `PYMEENV` variable as explained above.
 
 ![edit system environment variables](images/edit-env-vars-system-2.png)
 

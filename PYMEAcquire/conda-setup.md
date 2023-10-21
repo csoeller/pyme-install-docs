@@ -2,7 +2,14 @@
 
 We prefer to use conda enviroments for acquisition and general PYME app use. This allows adding experimental configs without harming the current working setup etc.
 
-Installing environments accessible for all users with miniconda (or Anaconda in general) needs a little extra work. Windows file permissions will likely get into it as well...
+Installing environments accessible for all users with miniconda (or Anaconda in general) needs a little extra work. Windows file permissions get into it as well...
+
+## Additional packages for an acquisition system
+
+A number of extra modules are required for an acquisition system to talk to hardware modules.
+
+1. `pyserial` - serial communication to lasers, filterwheels etc. Installation: `conda install pyserial`
+2. `pywin32` - this one is required for the interface to the Nikon Ti. This may be already installed with `pyme-depends`, i.e. part of the basic PYME install on windows. CHECK...
 
 As a quick summary a terse sequence of commands that achieves a suitable install:
 
