@@ -26,20 +26,20 @@ There are a couple of fairly straightforward ways to set environment variables w
 
 Go to Control Panel, select User Accounts, then select User Accounts again and you should see a window that has an entry `Change my environment variables` at the bottom left.
 
-![User Account Dialogue](images/user account environment variables.png)
+![User Account Dialogue](images/user-account-environment-variables.png)
 
 When you click on that link you get a window that allows you to create new and edit existing user environment variables (editing of system variables will be grayed out). The variable to create (or edit) is called `PYMEENV` - its value must point to an existing conda environment that has all the PYME apps installed. In the example below the value is `pyme-updateoct23`.
 
-![edit environment variables](images/user account edit environment variables.png)
+![edit environment variables](images/user-account-edit-environment-variables.png)
 
 #### Admin users
 
 Admin users can straight search for the "edit system environment variables" or similar expression in the search box. The main hit that comes up should open the dialogue below.
 
-![edit system environment variables](images/edit env vars system-1.png)
+![edit system environment variables](images/edit-env-vars-system-1.png)
 
 Follow the link `Environment Variables...` which brings up the dialog as above but now you can choose to edit both user environment variables and system enviroment variables. Depending on what you are trying to achieve you may opt for system variables (e.g. change the default for all users) or user variables (e.g. testing setting for you as a single user). Note that settings by individual users of the user environment variable can override the system default (I believe). Set the `PYMEENV` variable as explained above.
 
-![edit system environment variables](images/edit env vars system-2.png)
+![edit system environment variables](images/edit-env-vars-system-2.png)
 
 Some further hints on setting environment variables can be found in various places, for example [this page](https://www.howtogeek.com/787217/how-to-edit-environment-variables-on-windows-10-or-11/).
