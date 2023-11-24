@@ -9,12 +9,13 @@ Installing environments accessible for all users with miniconda (or Anaconda in 
 A number of extra modules are required for an acquisition system to talk to hardware modules.
 
 1. `pyserial` - serial communication to lasers, filterwheels etc. Installation: `conda install pyserial`
-2. `pywin32` - this one is required for the interface to the Nikon Ti. This may be already installed with `pyme-depends`, i.e. part of the basic PYME install on windows. CHECK...
+2. `pywin32` - this one is required for the interface to the Nikon Ti. This may be already installed with `pyme-depends`, i.e. part of the basic PYME install on windows. Update: this seems already installed with `pyme-depends`
+3. `pywinusb` - this one is required if you want to use a spacenav device; currently best installed with `pip` it seems...
 
 As a quick summary a terse sequence of commands that achieves a suitable install:
 
 ```DOS
-conda config --append channels anaconda
+# conda config --append channels anaconda # this should not be required
 conda config --add channels david_baddeley
 conda create -p c:\python-support-files\envs\pyme-shared python=3.7 pyme-depends
 
@@ -24,6 +25,7 @@ REM install a couple of packages manually
 conda activate pyme-shared
 conda install statsmodels # for PYME-extra
 conda install pyserial # for PYMEAcquire serial devices
+pip install pywinusb # required for spacenav
 
 REM after cloning the relevant repos go into respective directories and build
 cd \python-support-files
@@ -83,6 +85,10 @@ Detailed instructions for building and installing git tools, C compiler etc see 
 ### PYME-cs-siteconfig
 
 In addition we need the repository that has our site configuration details on these acquisition PCs. [PYME-cs-siteconfig](https://github.com/csoeller/PYME-cs-siteconfig) has init files, launchers and custom protocols, amongst other things. Consult the [PYME-cs-siteconfig installer page](PYME-cs-siteconfig.md) for more details.
+
+## Setting up pixel sizes for cameras
+
+With the new install the pixel sizes for all typically used cameras need to be set anew. This can occur from the `Camera>Set Pixel Size` menu in a suitable `pymeacquire` run that uses the camera in question. Numbers from the current settings could be looked up from the earlier install or use a calibration slide to use the opportunity and check the calibration for good.
 
 ## Making the install accessible for standard users
 
